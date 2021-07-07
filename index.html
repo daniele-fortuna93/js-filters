@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="img-container" id="img_div">
+            </div>
+            <div class="filter-container">
+                <ul id="filter-list">
+                    <li>
+                        <p>Grayscale</p>
+                        <input id="grayscale" type="range" min="0" max="100" value="0" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Saturate</p>
+                        <input id="saturate" type="range"  min="0" max="100" value="88" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Sepia</p>
+                        <input id="sepia" type="range"  min="0" max="100" value="0" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Invert</p>
+                        <input id="invert" type="range"  min="0" max="100" value="0" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Contrast</p>
+                        <input id="contrast" type="range"  min="0" max="100" value="83" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Brightness</p>
+                        <input id="brightness" type="range"  min="0" max="100" value="90" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Blur</p>
+                        <input id="blur" type="range"  min="0" max="5" value="0" onclick="setParams(this.name)">
+                    </li>
+                    <li>
+                        <p>Hue Rotate</p>
+                        <input id="hue-rotate" type="range"  min="0" max="360" value="0" onclick="setParams(this.name)">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
